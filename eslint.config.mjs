@@ -3,8 +3,8 @@ import globals from "globals";
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 import eslintConfigPrettier from "eslint-config-prettier";
-import reactRecommended from "eslint-plugin-react/configs/recommended";
-import reactJSXRuntime from "eslint-plugin-react/configs/jsx-runtime";
+import reactRecommended from "eslint-plugin-react/configs/recommended.js";
+import reactJSXRuntime from "eslint-plugin-react/configs/jsx-runtime.js";
 import nextPlugin from "@next/eslint-plugin-next";
 import hooksPlugin from "eslint-plugin-react-hooks";
 
