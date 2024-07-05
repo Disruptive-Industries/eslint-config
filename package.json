@@ -1,6 +1,6 @@
 {
   "name": "@disruptive-industries/eslint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "main": "eslint.config.mjs",
   "repository": {
@@ -8,9 +8,10 @@
     "url": "https://github.com/Disruptive-Industries/eslint-config.git"
   },
   "peerDependencies": {
-    "eslint": ">= 9"
+    "eslint": "^9.6.0"
   },
   "dependencies": {
+    "@eslint/compat": "^1.1.0",
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.6.0",
     "@next/eslint-plugin-next": "^14.2.4",
@@ -21,12 +22,14 @@
     "@types/react-dom": "^18.3.0",
     "eslint-config-next": "^14.2.4",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-compat": "^5.0.0",
+    "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-react": "^7.34.3",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-storybook": "^0.8.0",
-    "typescript": "^5.5.2",
-    "typescript-eslint": "^7.14.1"
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.15.0"
   },
   "packageManager": "bun@1.1.17"
 }
