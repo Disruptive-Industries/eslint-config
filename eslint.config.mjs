@@ -79,6 +79,7 @@ export default tseslint.config(
         "error",
         { "newlines-between": "always", alphabetize: { order: "asc" } },
       ],
+      "import/no-unresolved": "off",
     },
   }
 );
