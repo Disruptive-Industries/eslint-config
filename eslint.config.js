@@ -69,7 +69,6 @@ export default tseslint.config(
       // DI-specific rules
       "object-shorthand": "error",
       "no-alert": "error",
-      "no-console": "error",
       "no-debugger": "error",
       "no-else-return": "error",
       "@typescript-eslint/no-misused-promises": [
@@ -81,20 +80,6 @@ export default tseslint.config(
         },
       ],
       "@typescript-eslint/consistent-type-imports": "error",
-      "no-magic-numbers": "off",
-      "@typescript-eslint/no-magic-numbers": [
-        "error",
-        {
-          enforceConst: true,
-          ignoreArrayIndexes: true,
-          ignoreDefaultValues: true,
-          ignoreEnums: true,
-          ignoreClassFieldInitialValues: true,
-          ignoreNumericLiteralTypes: true,
-          ignoreReadonlyClassProperties: true,
-          ignoreTypeIndexes: true,
-        }
-      ],
       "@typescript-eslint/no-require-imports": "error",
       "@typescript-eslint/no-unnecessary-type-parameters": "error",
       "@typescript-eslint/no-unsafe-unary-minus": "error",
