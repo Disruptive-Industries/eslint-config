@@ -1,11 +1,14 @@
 {
   "name": "@disruptive-industries/eslint-config",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "main": "eslint.config.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/Disruptive-Industries/eslint-config.git"
+    "type": "github",
+    "url": "git+https://github.com/Disruptive-Industries/eslint-config.git"
   },
   "peerDependencies": {
     "eslint": "^9.6.0"
