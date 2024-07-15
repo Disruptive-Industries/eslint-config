@@ -81,7 +81,16 @@ export default tseslint.config(
         },
       ],
       "@typescript-eslint/consistent-type-imports": "error",
-      "@typescript-eslint/no-magic-numbers": "error",
+      "no-magic-numbers": "off",
+      "@typescript-eslint/no-magic-numbers": [
+        "error",
+        {
+          ignoreEnums: true,
+          ignoreNumericLiteralTypes: true,
+          ignoreReadonlyClassProperties: true,
+          ignoreTypeIndexes: true,
+        }
+      ],
       "@typescript-eslint/no-require-imports": "error",
       "@typescript-eslint/no-unnecessary-type-parameters": "error",
       "@typescript-eslint/no-unsafe-unary-minus": "error",
