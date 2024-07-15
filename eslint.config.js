@@ -4,7 +4,8 @@ import legacyNextPlugin from "@next/eslint-plugin-next";
 import eslintConfigPrettier from "eslint-config-prettier";
 import compat from "eslint-plugin-compat";
 import legacyImportPlugin from "eslint-plugin-import";
-import reactPlugin from "eslint-plugin-react";
+import reactPluginJsxRuntime from "eslint-plugin-react/configs/jsx-runtime";
+import reactPluginRecommended from "eslint-plugin-react/configs/recommended";
 import legacyHooksPlugin from "eslint-plugin-react-hooks";
 import globals from "globals";
 import tseslint from "typescript-eslint";
@@ -18,8 +19,8 @@ export default tseslint.config(
   ...tseslint.configs.strictTypeChecked,
   ...tseslint.configs.stylisticTypeChecked,
   compat.configs["flat/recommended"],
-  reactPlugin.configs.flat.recommended,
-  reactPlugin.configs.flat["jsx-runtime"],
+  reactPluginRecommended,
+  reactPluginJsxRuntime,
   eslintConfigPrettier,
   {
     plugins: {
