@@ -1,6 +1,6 @@
 {
   "name": "@disruptive-industries/eslint-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "main": "eslint.config.mjs",
   "repository": {

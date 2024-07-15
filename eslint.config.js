@@ -4,8 +4,7 @@ import legacyNextPlugin from "@next/eslint-plugin-next";
 import eslintConfigPrettier from "eslint-config-prettier";
 import compat from "eslint-plugin-compat";
 import legacyImportPlugin from "eslint-plugin-import";
-import reactJSXRuntime from "eslint-plugin-react/configs/jsx-runtime.js";
-import reactRecommended from "eslint-plugin-react/configs/recommended.js";
+import reactPlugin from "eslint-plugin-react";
 import legacyHooksPlugin from "eslint-plugin-react-hooks";
 import globals from "globals";
 import tseslint from "typescript-eslint";
@@ -17,9 +16,10 @@ const importPlugin = fixupPluginRules(legacyImportPlugin);
 export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.strictTypeChecked,
+  ...tseslint.configs.stylisticTypeChecked,
   compat.configs["flat/recommended"],
-  reactRecommended,
-  reactJSXRuntime,
+  reactPlugin.configs.flat.recommended,
+  reactPlugin.configs.flat["jsx-runtime"],
   eslintConfigPrettier,
   {
     plugins: {
@@ -59,6 +59,11 @@ export default tseslint.config(
       ...importPlugin.configs["typescript"].rules,
 
       // DI-specific rules
+      "object-shorthand": "error",
+      "no-alert": "error",
+      "no-console": "error",
+      "no-debugger": "error",
+      "no-else-return": "error",
       "@typescript-eslint/no-misused-promises": [
         "error",
         {
@@ -68,7 +73,13 @@ export default tseslint.config(
         },
       ],
       "@typescript-eslint/consistent-type-imports": "error",
-      "object-shorthand": "error",
+      "@typescript-eslint/no-magic-numbers": "error",
+      "@typescript-eslint/no-require-imports": "error",
+      "@typescript-eslint/no-unnecessary-type-parameters": "error",
+      "@typescript-eslint/no-unsafe-unary-minus": "error",
+      "@typescript-eslint/no-unused-expressions": "error",
+      "@typescript-eslint/no-use-before-define": "error",
+      "@typescript-eslint/no-useless-template-literals": "error",
       "import/no-amd": "error",
       "import/no-commonjs": "error",
       "import/no-absolute-path": "error",

@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     // Enable latest features
-    "lib": ["DOM", "DOM.Iterable", "DOM.AsyncIterable", "ESNext"],
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "target": "ESNext",
     "module": "ESNext",
     "moduleDetection": "force",
@@ -31,8 +31,9 @@
     ],
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "types": ["bun-types"]
   },
-  "include": ["eslint.config.mjs"],
+  "include": ["eslint.config.js"],
   "exclude": ["node_modules", "public"]
 }
