@@ -50,6 +50,13 @@ export default tseslint.config(
         },
         node: true,
       },
+      "import/core-modules": [
+        "bun",
+        "bun:ffi",
+        "bun:jsc",
+        "bun:sqlite",
+        "bun:test",
+      ]
     },
 
     rules: {

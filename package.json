@@ -1,6 +1,6 @@
 {
   "name": "@disruptive-industries/eslint-config",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "type": "module",
   "main": "eslint.config.js",
   "publishConfig": {
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/Disruptive-Industries/eslint-config.git"
   },
   "peerDependencies": {
-    "eslint": "^9.6.0"
+    "eslint": "^9.7.0"
   },
   "dependencies": {
     "@eslint/compat": "^1.1.1",
@@ -33,6 +33,7 @@
     "typescript-eslint": "^7.16.0"
   },
   "devDependencies": {
+    "eslint": "^9.7.0",
     "prettier": "^3.3.3"
   },
   "packageManager": "bun@1.1.20"
