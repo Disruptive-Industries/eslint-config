@@ -85,7 +85,11 @@ export default tseslint.config(
       "@typescript-eslint/no-magic-numbers": [
         "error",
         {
+          enforceConst: true,
+          ignoreArrayIndexes: true,
+          ignoreDefaultValues: true,
           ignoreEnums: true,
+          ignoreClassFieldInitialValues: true,
           ignoreNumericLiteralTypes: true,
           ignoreReadonlyClassProperties: true,
           ignoreTypeIndexes: true,
