@@ -56,7 +56,7 @@ export default tseslint.config(
         "bun:jsc",
         "bun:sqlite",
         "bun:test",
-      ]
+      ],
     },
 
     rules: {
@@ -86,10 +86,14 @@ export default tseslint.config(
       "@typescript-eslint/no-unused-expressions": "error",
       "@typescript-eslint/no-use-before-define": "error",
       "@typescript-eslint/no-useless-template-literals": "error",
+      "import/default": "off",
+      "import/named": "off",
+      "import/namespace": "off",
       "import/no-amd": "error",
       "import/no-commonjs": "error",
       "import/no-absolute-path": "error",
       "import/no-dynamic-require": "error",
+      "import/no-named-as-default-member": "off",
       "import/no-self-import": "error",
       "import/no-useless-path-segments": "error",
       "import/order": [
@@ -98,5 +102,5 @@ export default tseslint.config(
       ],
       "import/no-unresolved": "off",
     },
-  }
+  },
 );

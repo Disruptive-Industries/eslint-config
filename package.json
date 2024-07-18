@@ -1,6 +1,6 @@
 {
   "name": "@disruptive-industries/eslint-config",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "type": "module",
   "main": "eslint.config.js",
   "publishConfig": {
@@ -30,7 +30,7 @@
     "eslint-plugin-react": "^7.34.4",
     "eslint-plugin-react-hooks": "^4.6.2",
     "typescript": "^5.5.3",
-    "typescript-eslint": "^7.16.0"
+    "typescript-eslint": "^7.16.1"
   },
   "devDependencies": {
     "eslint": "^9.7.0",
