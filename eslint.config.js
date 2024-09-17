@@ -85,7 +85,7 @@ export default tseslint.config(
       "@typescript-eslint/no-unsafe-unary-minus": "error",
       "@typescript-eslint/no-unused-expressions": "error",
       "@typescript-eslint/no-use-before-define": "error",
-      "@typescript-eslint/no-useless-template-literals": "error",
+      "@typescript-eslint/no-unnecessary-template-expression": "error",
       "import/default": "off",
       "import/named": "off",
       "import/namespace": "off",
